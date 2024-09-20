@@ -72,6 +72,29 @@
                 background-position: center center;
             }
         }
+        
+        .audio-controls {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-right: 20px;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
     </style>
 </head>
 <body>
@@ -79,6 +102,14 @@
         <h1>💕 MI AM♥R(●'◡'●)💕</h1>
         <h2>Tengo un regalo para ti✍(◔◡◔)</h2>
         <button onclick="window.location.href='rosas.html'">Ver regalo☞💛</button>
+        <button id="playPauseBtn">Reproduceme ->▶️</button>
     </div>
+    <audio id="miAudio" loop>
+        <source src="music/Intro.mp3" type="audio/mpeg">
+        Tu navegador no soporta la reproducción de audio.
+    </audio>
+
+    <script src="audio.js"></script> <!-- Conectar con JavaScript -->
+
 </body>
 </html>
